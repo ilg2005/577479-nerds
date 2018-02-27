@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Игорь Гольдфарб](https://up.htmlacademy.ru/htmlcss/20/user/577479).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
