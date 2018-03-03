@@ -18,9 +18,37 @@
           <li class="cart"><a href="#">Корзина</a></li>
         </ul>
       </nav>
-      <h2>Магазин готовых шаблонов</h2>
     </header>
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <main class="container">
+      <h1 class="visually-hidden">Студия «Нёрдс»</h1>
+      <h2>Магазин готовых шаблонов</h2>
+      <aside class="filters">
+        <form>
+          <ul class="filters-list">
+            <li class="filters-price">
+              <h3>Стоимость</h3>
+              <!--Здесь будет фильтр стоимости-->
+            </li>
+            <li class="filters-grid">
+              <h3>Сетка</h3>
+              <label><input name="grid" type="radio" value="adaptive" checked>Адаптивная</label>
+              <label><input name="grid" type="radio" value="fixed">Фиксированная</label>
+              <label><input name="grid" type="radio" value="responsive">Резиновая</label>
+            </li>
+            <li class="filters-features">
+              <h3>Особенности</h3>
+              <label><input name="features" type="checkbox" value="slider" checked>Слайдер</label>
+              <label><input name="features" type="checkbox" value="advantages">Блок преимуществ</label>
+              <label><input name="features" type="checkbox" value="news" checked>Новости</label>
+              <label><input name="features" type="checkbox" value="gallery">Галерея</label>
+              <label><input name="features" type="checkbox" value="cart">Корзина</label>
+            </li>
+          </ul>
+          <input type="submit" name="apply" value="Показать">
+        </form>
+      </aside>
+
+    </main>
     <footer class="page-footer">
       <div class="footer-social-buttons">
         <ul>
