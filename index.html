@@ -6,20 +6,55 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-navigation">
-        <a class="logo">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
-        </a>
+      <nav class="navigation">
+        <div class="logo">
+          <a>
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии «Нёрдс»">
+          </a>
+        </div>
         <ul class="top-menu">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          <li class="cart"><a href="#">Корзина</a></li>
         </ul>
+          <div class="cart">
+            <a href="#">Корзина</a>
+          </div>
       </nav>
+      <div class="slider">
+        <!-- Почему слайдер идет в шапку, а не как section в main? Только из-за серого фона и расположения наверху в макете? Будет ли ошибкой включать в header только то, что повторяется на обеих страницах (соответственно, все остальное - в main)?-->
+        <ul class="slides-list">
+          <li class="slide slide1">
+            <h2 class="slide-title">Долго, дорого,  скрупулезно.</h2>
+            <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+            <a href="#">Узнать больше</a>
+            <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+          </li>
+          <li class="slide slide2">
+            <h2 class="slide-title">Любим математику как никто другой</h2>
+            <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+            <a href="#">Узнать больше</a>
+            <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
+          </li>
+          <li class="slide slide3">
+            <h2 class="slide-title">Только ночь, только хардкор</h2>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a href="#">Узнать больше</a>
+            <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+      </div>
     </header>
-    <main class="container">
+    <main class="page-content">
       <h1 class="visually-hidden">Студия «Нёрдс»</h1>
       <section class="services">
       <h2 class="visually-hidden">Услуги и преимущества</h2>
