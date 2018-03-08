@@ -16,7 +16,7 @@
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li class="navigation-current">
-            <a href="catalog.html">Магазин</a>
+            <a>Магазин</a>
           </li>
           <li><a href="#">Контакты</a></li>
         </ul>
@@ -30,7 +30,7 @@
       <div class="container">
         <h1 class="visually-hidden">Студия «Нёрдс»</h1>
         <aside class="filters">
-          <form>
+          <form action="#" method="get">
             <ul class="filters-list">
               <li class="filters-price">
                 <h3>Стоимость</h3>
@@ -38,84 +38,96 @@
               </li>
               <li class="filters-grid">
                 <h3>Сетка</h3>
-                <label><input name="grid" type="radio" value="adaptive" checked>Адаптивная</label>
-                <label><input name="grid" type="radio" value="fixed">Фиксированная</label>
-                <label><input name="grid" type="radio" value="responsive">Резиновая</label>
+                <input class="visually-hidden" id="adaptive" name="grid" type="radio" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+                <input class="visually-hidden" id="fixed" name="grid" type="radio" value="fixed">
+                <label for="fixed">Фиксированная</label>
+                <input class="visually-hidden" id="responsive" name="grid" type="radio" value="responsive">
+                <label for="responsive">Резиновая</label>
               </li>
               <li class="filters-features">
                 <h3>Особенности</h3>
-                <label><input name="features" type="checkbox" value="slider" checked>Слайдер</label>
-                <label><input name="features" type="checkbox" value="advantages">Блок преимуществ</label>
-                <label><input name="features" type="checkbox" value="news" checked>Новости</label>
-                <label><input name="features" type="checkbox" value="gallery">Галерея</label>
-                <label><input name="features" type="checkbox" value="cart">Корзина</label>
+                <input  class="visually-hidden" id="slider" name="slider" type="checkbox" checked>
+                <label for="slider">Слайдер</label>
+                <input  class="visually-hidden" id="advantages" name="advantages" type="checkbox">
+                <label for="advantages">Блок преимуществ</label>
+                <input  class="visually-hidden" id="news" name="news" type="checkbox" checked>
+                <label for="news">Новости</label>
+                <input  class="visually-hidden" id="gallery" name="gallery" type="checkbox">
+                <label for="gallery">Галерея</label>
+                <input  class="visually-hidden" id="cart" name="cart" type="checkbox">
+                <label for="cart">Корзина</label>
               </li>
             </ul>
             <input type="submit" name="apply" value="Показать">
           </form>
         </aside>
         <section class="templates">
+          <div class="templates-filter">
+            <span>Сортировать:</span>
+            <ul class="sort">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
+              <li class="arrow-down"><a href="#"></a></li>
+              <li class="arrow-up"><a href="#"></a></li>
+            </ul>
+          </div>
           <ul class="templates-list">
             <li class="templates-item">
-              <figure class="sedona">
-                <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
-              </figure>
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">
               <div class="sedona-hover">
-                <h3>Sedona</h3>
+                <h3><a href="#">Sedona</a></h3>
                 <p>Информационный сайт  для туристов</p>
                 <a class="price-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="templates-item">
-              <figure class="pink">
-                <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
-              </figure>
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink">
               <div class="pink-hover">
-                <h3>Pink App</h3>
+                <h3><a href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="price-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="templates-item">
-              <figure class="barbershop">
-                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон барбершопа">
-              </figure>
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон барбершопа">
               <div class="barbershop-hover">
-                <h3>Barbershop</h3>
+                <h3><a href="#">Barbershop</a></h3>
                 <p>Сайт салоны красоты. Для мужчин, да.</p>
                 <a class="price-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="templates-item">
-              <figure class="mishka">
-                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
-              </figure>
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон Mishka">
               <div class="mishka-hover">
-                <h3>MISHKA</h3>
+                <h3><a href="#">Mishka</a></h3>
                 <p>Интернет-магазин  вязаных игрушек</p>
                 <a class="price-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="templates-item">
-              <figure class="aplus">
-                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон Aplus">
-              </figure>
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон Aplus">
               <div class="aplus-hover">
-                <h3>A Plus</h3>
+                <h3><a href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a class="price-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li class="templates-item">
-              <figure class="kvast">
-                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Kvast">
-              </figure>
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон Kvast">
               <div class="kvast-hover">
-                <h3>КВАСТ</h3>
+                <h3><a href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a class="price-button" href="#">9 900 руб.</a>
               </div>
             </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item active"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item next"><a href="#">Следующая</a></li>
           </ul>
         </section>
       </div> <!--Здесь закрывается .container-->
