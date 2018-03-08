@@ -23,7 +23,6 @@
           </div>
       </nav>
       <div class="slider">
-        <!-- Почему слайдер идет в шапку, а не как section в main? Только из-за серого фона и расположения наверху в макете? Будет ли ошибкой включать в header только то, что повторяется на обеих страницах (соответственно, все остальное - в main)?-->
         <ul class="slides-list">
           <li class="slide slide1">
             <h2 class="slide-title">Долго, дорого,  скрупулезно.</h2>
@@ -45,6 +44,7 @@
           </li>
         </ul>
         <div class="slider-controls">
+          <!--Надо ли здесь "заворачивать" связанные элементы формы в <p>? -->
           <input type="radio" id="btn-1" name="toggle" checked>
           <input type="radio" id="btn-2" name="toggle">
           <input type="radio" id="btn-3" name="toggle">
@@ -154,12 +154,18 @@
       <h2>Напишите нам</h2>
       <span class="button-close"></span>
       <form class="popup-write-us" action="#" method="post">
-        <label for="full-name">Ваше имя:</label>
-        <input id="full-name" type="text" name="full-name" placeholder="Имя Фамилия">
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="email" name="email" placeholder="email@example.com">
-        <label for="text-area">Текст письма:</label>
-        <textarea id="text-area" rows="10" cols="45" name="text-area" placeholder="В свободной форме"></textarea>
+        <p>
+          <label for="full-name">Ваше имя:</label>
+          <input id="full-name" type="text" name="full-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="text-area">Текст письма:</label>
+          <textarea id="text-area" rows="10" cols="45" name="text-area" placeholder="В свободной форме"></textarea>
+        </p>
         <input type="submit" name="send" value="Отправить">
       </form>
     </div>
