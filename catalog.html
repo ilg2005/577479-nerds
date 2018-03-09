@@ -78,7 +78,7 @@
                 </li>
               </ul>
             </fieldset>
-            <input type="submit" name="apply" value="Показать">
+            <button class="show-btn" type="submit">Показать</button>
           </form>
         </aside>
         <section class="templates">
@@ -182,7 +182,7 @@
             <p class="address-title">Nёrds design studio</p>
             <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <button name="write-us" type="button">Напишите нам</button>
+            <button class="write-btn" type="button">Напишите нам</button>
           </div>
           <div class="map-marker">
             <img src="img/map-marker.png" width="367" height="190" alt="Маркер расположения офиса студии «Нёрдс» на карте">
@@ -209,7 +209,7 @@
     </footer>
     <div class="popup">
       <h2>Напишите нам</h2>
-      <button class="button-close" type="button" aria-label="Кнопка закрытия формы отправки данных"><span class="visually-hidden">Закрыть</span></button>
+      <button class="close-btn" type="button" aria-label="Кнопка закрытия формы отправки данных"><span class="visually-hidden">Закрыть</span></button>
       <form class="popup-write-us" action="https://echo.htmlacademy.ru" rel="nofollow" method="post">
         <p>
           <label for="full-name">Ваше имя:</label>
@@ -223,7 +223,7 @@
           <label for="text-area">Текст письма:</label>
           <textarea id="text-area" rows="10" cols="45" name="text-area" placeholder="В свободной форме"></textarea>
         </p>
-        <input type="submit" name="send" value="Отправить">
+        <button class="send-btn" type="submit">Отправить</button>
       </form>
     </div>
   </body>
