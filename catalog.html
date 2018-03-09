@@ -15,7 +15,7 @@
         <ul class="top-menu">
           <li><a href="#" rel="nofollow">Студия</a></li>
           <li><a href="#" rel="nofollow">Клиенты</a></li>
-          <li class="navigation-current" aria-current="page">
+          <li class="navigation-current">
             <a><span class="visually-hidden">Текущий пункт:</span>Магазин</a>
           </li>
           <li><a href="#" rel="nofollow">Контакты</a></li>
@@ -34,7 +34,7 @@
               <legend>Стоимость</legend>
                 <!--Как нормально сделать двойной ползунок??-->
                 <input type="range" min="0" max="23000" value="15000" name="thumb">
-              <p><pre>От <span>0</span> до <span>15 000</span></pre></p>
+              <pre>От <span>0</span> до <span>15 000</span></pre>
             </fieldset>
             <fieldset class="filters-grid">
               <legend>Сетка</legend>
@@ -145,10 +145,18 @@
           </ul>
           <ul class="pagination-list">
             <!--А это не кнопками оформляется?-->
-            <li class="pagination-item active"><a>1</a></li>
-            <li class="pagination-item"><a href="#" rel="nofollow">2</a></li>
-            <li class="pagination-item"><a href="#" rel="nofollow">3</a></li>
-            <li class="pagination-item next"><a href="#" rel="nofollow">Следующая</a></li>
+            <li class="pagination-item active">
+              <a><span class="visually-hidden">Текущая страница:</span>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" rel="nofollow">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" rel="nofollow">3</a>
+            </li>
+            <li class="pagination-item next">
+              <a href="#" rel="nofollow">Следующая</a>
+            </li>
           </ul>
         </section>
       </div> <!--Здесь закрывается .container-->
