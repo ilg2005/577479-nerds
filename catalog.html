@@ -30,51 +30,51 @@
       <div class="container">
         <h1 class="visually-hidden">Студия «Нёрдс»</h1>
         <aside class="filters">
-          <form action="#" method="post">
-            <ul class="filters-list">
-              <li class="filters-price">
-                <h3>Стоимость</h3>
-                <!--Здесь будет фильтр стоимости-->
-              </li>
-              <li class="filters-grid">
-                <h3>Сетка</h3>
-                <p>
-                  <input class="visually-hidden" id="adaptive" name="grid" type="radio" value="adaptive" checked>
-                  <label for="adaptive">Адаптивная</label>
-                </p>
-                <p>
-                  <input class="visually-hidden" id="fixed" name="grid" type="radio" value="fixed">
-                  <label for="fixed">Фиксированная</label>
-                </p>
-                <p>
-                  <input class="visually-hidden" id="responsive" name="grid" type="radio" value="responsive">
-                  <label for="responsive">Резиновая</label>
-                </p>
-              </li>
-              <li class="filters-features">
-                <h3>Особенности</h3>
-                <p>
-                  <input  class="visually-hidden" id="slider" name="slider" type="checkbox" checked>
-                  <label for="slider">Слайдер</label>
-                </p>
-                <p>
-                  <input  class="visually-hidden" id="advantages" name="advantages" type="checkbox">
-                  <label for="advantages">Блок преимуществ</label>
-                </p>
-                <p>
-                  <input  class="visually-hidden" id="news" name="news" type="checkbox" checked>
-                  <label for="news">Новости</label>
-                </p>
-                <p>
-                  <input  class="visually-hidden" id="gallery" name="gallery" type="checkbox">
-                  <label for="gallery">Галерея</label>
-                </p>
-                <p>
-                  <input  class="visually-hidden" id="cart" name="cart" type="checkbox">
-                  <label for="cart">Корзина</label>
-                </p>
-              </li>
-            </ul>
+          <form action="https://echo.htmlacademy.ru" rel="nofollow" method="get">
+            <fieldset class="filters-price">
+              <legend>Стоимость</legend>
+                <!--Как нормально сделать двойной ползунок??-->
+                <input type="range" min="0" max="23000" value="15000" name="thumb">
+              <p><pre>От <span>0</span> до <span>15 000</span></pre></p>
+            </fieldset>
+            <fieldset class="filters-grid">
+              <legend>Сетка</legend>
+              <p>
+                <input class="visually-hidden" id="adaptive" name="grid" type="radio" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="fixed" name="grid" type="radio" value="fixed">
+                <label for="fixed">Фиксированная</label>
+              </p>
+              <p>
+                <input class="visually-hidden" id="responsive" name="grid" type="radio" value="responsive">
+                <label for="responsive">Резиновая</label>
+              </p>
+            </fieldset>
+            <fieldset class="filters-features">
+              <legend>Особенности</legend>
+              <p>
+                <input  class="visually-hidden" id="slider" name="slider" type="checkbox" checked>
+                <label for="slider">Слайдер</label>
+              </p>
+              <p>
+                <input  class="visually-hidden" id="advantages" name="advantages" type="checkbox">
+                <label for="advantages">Блок преимуществ</label>
+              </p>
+              <p>
+                <input  class="visually-hidden" id="news" name="news" type="checkbox" checked>
+                <label for="news">Новости</label>
+              </p>
+              <p>
+                <input  class="visually-hidden" id="gallery" name="gallery" type="checkbox">
+                <label for="gallery">Галерея</label>
+              </p>
+              <p>
+                <input  class="visually-hidden" id="cart" name="cart" type="checkbox">
+                <label for="cart">Корзина</label>
+              </p>
+            </fieldset>
             <input type="submit" name="apply" value="Показать">
           </form>
         </aside>
