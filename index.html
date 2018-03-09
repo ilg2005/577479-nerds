@@ -45,12 +45,18 @@
         </ul>
         <div class="slider-controls">
           <!--Надо ли здесь "заворачивать" связанные элементы формы в <p>? Как здесь правильно разметить?-->
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
+          <p>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <label for="btn-1"><span class="visually-hidden">Слайд 1</span></label>
+          </p>
+          <p>
+            <input type="radio" id="btn-2" name="toggle">
+            <label for="btn-2"><span class="visually-hidden">Слайд 2</span></label>
+          </p>
+          <p>
+            <input type="radio" id="btn-3" name="toggle">
+            <label for="btn-3"><span class="visually-hidden">Слайд 3</span></label>
+          </p>
         </div>
       </div>
     </header>
