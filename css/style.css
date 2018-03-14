@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -15,4 +15,88 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
+/* ------Разметка .page-header------*/
+
+.page-header {
+  padding-left: 140px;
+  padding-right: 140px;
+  background-color: #eeeeee;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-menu li {
+  padding-right: 50px;
+}
+
+.navigation a {
+  color: #000000;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #fb565a;
+}
+
+.navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.navigation-current a {
+  border-bottom: 2px solid #fb565a;
+}
+
+.cart:before {
+  content: url(../img/cart-icon.svg);
+  margin-right: 25px;
+}
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 115px;
+}
+/*----------------------------------------*/
