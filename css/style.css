@@ -26,7 +26,11 @@ a {
   overflow: hidden;
 }
 
-/* ------Разметка .page-header------*/
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("/fonts/myriadpro.woff2");
+}
+/* ------Стилизация .page-header------*/
 
 .page-header {
   padding-left: 140px;
@@ -99,4 +103,22 @@ a {
   justify-content: center;
   padding-bottom: 115px;
 }
+/*----------------------------------------*/
+/* ------Стилизация .page-footer------*/
+.page-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-slogan p:first-child {
+  /* Почему-то не удается подключить этот шрифт */
+  font-family: "Myriad Pro", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-slogan p:last-child {
+  line-height: 22px;
+}
+
 /*----------------------------------------*/
