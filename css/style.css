@@ -43,10 +43,6 @@ a {
   overflow: hidden;
 }
 
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("/fonts/myriadpro.woff2");
-}
 /* ------Стилизация .page-header------*/
 
 .page-header {
@@ -270,9 +266,8 @@ a {
   width: 200px;
   height: 50px;
 
-  font-family: "Myriad Pro", Arial, sans-serif;
   line-height: 18px;
-  font-weight: 500;
+  font-weight: 500; /* в макете у меня Roboto Medium */
 
   text-align: center;
   color: #ffffff;
@@ -285,12 +280,10 @@ a {
 
 .price-button:hover,
 .price-button:focus {
-  font-family: Roboto, Arial, sans-serif;
   background-color: #e74246;
 }
 
 .price-button:active {
-  font-family: Roboto, Arial, sans-serif;
   background-color: #d7373b;
   box-shadow: inset 0px 3px #c13135;
 }
@@ -360,8 +353,6 @@ a {
 }
 
 .footer-slogan p:first-child {
-  /* Почему-то не удается подключить этот шрифт */
-  font-family: "Myriad Pro", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
 }
