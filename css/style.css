@@ -57,6 +57,10 @@ a {
   min-height: 355px;
 }
 
+.index-page {
+  min-height: 545px;
+}
+
 .navigation {
   margin: 0;
   padding: 0;
@@ -71,7 +75,9 @@ a {
 }
 
 .logo {
-  margin: 50px 0px 0px 140px;
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 140px;
   padding: 0;
 }
 
@@ -133,21 +139,113 @@ a {
 
 .page-title {
   margin: 0;
-  padding: 70px 0px 0px 355px;
+  padding: 0;
+  padding-top: 70px;
+  padding-left: 355px;
 
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
 }
+
+/* ------Стилизация слайдера ------*/
+.slider {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 385px;
+  border: 1px dashed green;
+}
+
+.slide {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 385px;
+
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-size: 760px 431px;
+  background-position: 495px 0px;
+}
+
+.slide p:first-child {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-left: 100px;
+
+  width: 525px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.slide p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-left: 100px;
+
+  width: 525px;
+
+  color: #283136;
+}
+
+.slide-button {
+  margin: 0;
+  margin-top: 40px;
+  margin-left: 100px;
+
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
+
+  background-color: #fb565a;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-button a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slide-button:hover,
+.slide-button:focus {
+  background-color: #e74246;
+}
+
+.slide-button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
 /*----------------------------------------*/
 /* ------Стилизация раздела "Услуги и преимущества" ------*/
 .services-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 140px;
+  padding-top: 80px;
+
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .services-item {
+  margin: 0;
+  padding: 0;
+  margin-right: 155px;
   width: 245px;
 }
 
@@ -164,6 +262,10 @@ a {
 }
 
 .services-item h3 {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -171,10 +273,20 @@ a {
   text-transform: uppercase;
 }
 
+.services-item p {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+
 .services-button {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 50px;
   border-radius: 3px;
