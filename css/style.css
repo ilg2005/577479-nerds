@@ -46,15 +46,25 @@ a {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20;
+}
+
 /* ------Стилизация .page-header------*/
 
 .page-header {
   margin: 0;
   padding: 0;
+
   background-color: #eeeeee;
 
   width: 100%;
   min-height: 355px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .index-page {
@@ -71,13 +81,14 @@ a {
   text-transform: uppercase;
 
   display: flex;
+  justify-content: flex-start;
   width: 100%;
 }
 
 .logo {
   margin: 0;
   margin-top: 50px;
-  margin-left: 140px;
+  margin-left: 20px;
   padding: 0;
 }
 
@@ -87,7 +98,7 @@ a {
   padding: 0;
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   min-width: 438px;
 }
@@ -95,13 +106,14 @@ a {
 .top-menu li {
   margin: 0;
   padding: 0;
+  margin-right: 50px;
 }
 
 .cart {
   margin: 0;
   padding: 0;
   margin-top: 75px;
-  margin-left: 245px;
+  margin-left: 180px;
 }
 
 .navigation a {
@@ -156,7 +168,8 @@ a {
 
   width: 100%;
   min-height: 385px;
-  border: 1px dashed green;
+
+  position: relative;
 }
 
 .slide {
@@ -169,14 +182,14 @@ a {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-size: 760px 431px;
-  background-position: 495px 0px;
+  background-position: 335px -25px;
 }
 
 .slide p:first-child {
   margin: 0;
   padding: 0;
   padding-top: 50px;
-  padding-left: 100px;
+  /*padding-left: 100px;*/
 
   width: 525px;
 
@@ -190,7 +203,7 @@ a {
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  padding-left: 100px;
+  /*padding-left: 100px;*/
 
   width: 525px;
 
@@ -200,7 +213,7 @@ a {
 .slide-button {
   margin: 0;
   margin-top: 40px;
-  margin-left: 100px;
+
 
   width: 240px;
   height: 50px;
@@ -230,13 +243,29 @@ a {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
+
+.slider-controls {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  left: 520px;
+  top: 290px;
+}
+
+.slider-controls p {
+  margin-right: 25px;
+}
 /*----------------------------------------*/
 /* ------Стилизация раздела "Услуги и преимущества" ------*/
 .services-list {
   margin: 0;
   padding: 0;
-  padding-left: 140px;
   padding-top: 80px;
+  margin-left: 20px;
 
   display: flex;
   justify-content: flex-start;
@@ -340,13 +369,250 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/*----------------------------------------*/
-/* ------Стилизация страницы магазина------*/
 
-.container {
+/* ------Стилизация раздела "О студии" ------*/
+.studio {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-height: 525px;
+
   display: flex;
+  justify-content: flex-start;
+}
+
+.col-left {
+  margin: 0;
+  padding: 0;
+  padding-top: 160px;
+  margin-left: 20px;
+  margin-right: 135px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 655px;
+}
+
+.col-left b {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.col-left p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  color: #283136;
+}
+
+.col-left .studio-details {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.creation-list  {
+  margin: 0;
+  padding: 0;
+
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
 }
+
+.creation-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.col-right {
+  margin: 0;
+  padding: 0;
+  padding-top: 125px;
+  margin-left: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 380px;
+}
+
+.col-right .studio-details {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.percentages-table {
+  margin: 0;
+  padding: 0;
+}
+
+.percentages-table tr:first-child {
+  margin: 0;
+  padding: 0;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+tr span {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #000000;
+
+  vertical-align: top;
+}
+
+/* ------Стилизация секции "Клиенты" с логотипами------*/
+.customers {
+  margin: 0;
+  margin: 0;
+
+}
+
+.customers-list {
+  margin: 0;
+  padding: 0 20px;
+  margin-top: 85px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list li {
+  opacity: 0.2;
+}
+
+.customers-list li:hover,
+.customers-list li:focus {
+  opacity: 1;
+}
+
+.customers-list li:active {
+  opacity: 0.1;
+}
+
+/*-------Стилизация раздела "Контакты" и карты----*/
+.map {
+  margin: 0px;
+  padding: 0px;
+
+  position: relative;
+}
+
+.address {
+  margin: 0px;
+  padding: 50px;
+
+  width: 320px;
+  height: 305px;
+
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 130px;
+  left: 140px;
+}
+
+.address-title {
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.address p:nth-child(2) {
+  margin: 0px;
+  padding: 0px;
+
+  margin-top: 20px;
+
+  line-height: 18px;
+  color: #666666;
+
+}
+
+.write-btn {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+
+
+  width: 220px;
+  height: 50px;
+  border-radius: 3px;
+
+  background-color: #fb565a;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0px;
+
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.write-btn:hover,
+.write-btn:focus {
+  background-color: #e74246;
+}
+
+.write-btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.map-marker {
+  margin: 0px;
+  padding: 50px;
+
+  width: 400px;
+  height: 200px;
+
+  background-color: transparent;
+
+  position: absolute;
+  top: 150px;
+  left: 670px;
+}
+/*----------------------------------------*/
+/* ------Стилизация страницы магазина------*/
 
 .sort {
   display: flex;
@@ -485,13 +751,74 @@ a {
 /*----------------------------------------*/
 /* ------Стилизация .page-footer------*/
 .page-footer {
+  margin: 0;
+  padding: 0;
+  padding-left: 140px;
+
   display: flex;
   justify-content: flex-start;
 }
 
+.social li {
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50px;
+
+  background-color: #e1e1e1;
+
+  display: inline-block;
+}
+
+.social li:hover,
+.social li:focus {
+  background-color: #e74246;
+}
+
+.social li:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.vk {
+
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 15px;
+  background-position: 0px 0px;
+
+}
+
+.fb {
+
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 15px;
+  background-position: 0px 0px;
+
+}
+
+.insta {
+
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 15px;
+  background-position: 0px 0px;
+
+}
+
 .footer-slogan p:first-child {
+  margin: 0;
+  padding: 0;
+
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
+
 }
 
 .footer-slogan p:last-child {
