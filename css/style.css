@@ -23,25 +23,28 @@ body {
 
   background-color: #ffffff;
 
-  min-width: 1440px;
+  width: 1440px; /*width или min-width?*/
   min-height: 2475px;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -50,49 +53,62 @@ a {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20;
+  border: 1px dashed green;
 }
 
 /* ------Стилизация .page-header------*/
 
 .page-header {
-  margin: 0;
-  padding: 0;
-
   background-color: #eeeeee;
 
-  width: 100%;
   min-height: 355px;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.index-page {
-  min-height: 545px;
 }
 
 .navigation {
-  margin: 0;
-  padding: 0;
 
   line-height: 30px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
 
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  /*display: flex;*/
+  /*justify-content: flex-start;*/
+  /*width: 100%;*/
+  background: lightblue;
 }
 
-.logo {
-  margin: 0;
+.navigation a {
+  display: block;
+  color: #000000;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #fb565a;
+}
+
+.navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*.logo {
+
+  width: 170px;
+  height: 70px;
   margin-top: 50px;
-  margin-left: 20px;
-  padding: 0;
+
+}*/
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.8;
 }
 
-.top-menu {
+.logo:active {
+  opacity: 0.3;
+}
+
+/*.top-menu {
   margin-top: 75px;
   margin-left: 200px;
   padding: 0;
@@ -116,39 +132,22 @@ a {
   margin-left: 180px;
 }
 
-.navigation a {
-  color: #000000;
-}
 
-.navigation a:hover,
-.navigation a:focus {
-  color: #fb565a;
-}
 
-.navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
 
-.logo:hover,
-.logo:focus {
-  opacity: 0.8;
-}
 
-.logo:active {
-  opacity: 0.3;
-}
 
 .navigation-current {
   text-decoration: underline;
   text-decoration-color: #fb565a;
-  /*border-bottom: 2px solid #fb565a;*/
+  /*border-bottom: 2px solid #fb565a;
 }
 
 .cart:before {
   content: url(../img/cart-icon.svg);
   margin-right: 25px;
 }
-
+*/
 .page-title {
   margin: 0;
   padding: 0;
@@ -172,7 +171,7 @@ a {
   position: relative;
 }
 
-.slide {
+.slider-item {
   margin: 0;
   padding: 0;
 
@@ -185,7 +184,7 @@ a {
   background-position: 335px -25px;
 }
 
-.slide p:first-child {
+.slider-item p:first-child {
   margin: 0;
   padding: 0;
   padding-top: 50px;
@@ -199,7 +198,7 @@ a {
   color: #000000;
 }
 
-.slide p:nth-child(2) {
+.slider-item p:nth-child(2) {
   margin: 0;
   padding: 0;
   padding-top: 25px;
@@ -210,7 +209,7 @@ a {
   color: #283136;
 }
 
-.slide-button {
+.slider-button {
   margin: 0;
   margin-top: 40px;
 
@@ -226,7 +225,7 @@ a {
   align-items: center;
 }
 
-.slide-button a {
+.slider-button a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -234,12 +233,12 @@ a {
   text-transform: uppercase;
 }
 
-.slide-button:hover,
-.slide-button:focus {
+.slider-button:hover,
+.slider-button:focus {
   background-color: #e74246;
 }
 
-.slide-button:active {
+.slider-button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -522,6 +521,8 @@ tr span {
 .map {
   margin: 0px;
   padding: 0px;
+
+  min-width: 100%;
 
   position: relative;
 }
