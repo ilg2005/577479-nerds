@@ -53,7 +53,6 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  /*border: 1px dashed green;*/
 }
 
 /* ------Стилизация .page-header------*/
@@ -63,21 +62,16 @@ input[type="radio"].visually-hidden {
   width: 100%;
   min-height: 125px;
   padding-top: 50px;
-
-  /*border: 1px dashed green;*/
 }
 
 .navigation {
-
-  /*padding-bottom: 10px;*/
-
   line-height: 30px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background: lightblue;
 }
@@ -86,8 +80,6 @@ input[type="radio"].visually-hidden {
   display: block;
 
   color: #000000;
-
-
 }
 
 .navigation a:hover,
@@ -100,7 +92,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
-  /*margin-top: 50px;*/
+  margin-right: 200px;
   background: lightyellow;
 }
 
@@ -115,6 +107,8 @@ input[type="radio"].visually-hidden {
 
 .top-menu {
   margin: 0;
+
+  margin-top: 5px;
   padding: 0;
 
   list-style: none;
@@ -123,20 +117,21 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   background: lightyellow;
-
-
-
 }
 
-.top-menu li {
-  margin: 0 25px;
-  padding: 0;
-  padding-top: 5px;
+.top-menu li a {
+  margin-right: 48px;
+  padding: 5px 0;
+}
 
+
+.top-menu li:nth-child(3) a {
+  margin-right: 43px;
 }
 
 .cart {
   margin: 0;
+  margin-left: auto;
   padding: 0;
 
   max-width: 115px;
@@ -144,13 +139,11 @@ input[type="radio"].visually-hidden {
   display: flex;
 
   background: lightyellow;
-
-
-
 }
 
 .cart a {
   padding-left: 40px;
+  padding-top: 2px;
 
   position: relative;
 }
@@ -170,7 +163,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-
 .navigation-current a {
   border-bottom: 2px solid #fb565a;
 }
@@ -178,7 +170,7 @@ input[type="radio"].visually-hidden {
 .page-title {
   margin: 0;
   padding: 0;
-  padding-top: 70px;
+  padding-top: 67px;
   padding-left: 215px;
 
   font-size: 55px;
