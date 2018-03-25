@@ -73,7 +73,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: lightblue;
+  /*background: lightblue;*/
 }
 
 .navigation a {
@@ -93,7 +93,7 @@ input[type="radio"].visually-hidden {
 
 .logo {
   margin-right: 200px;
-  background: lightyellow;
+ /* background: lightyellow;*/
 }
 
 .logo:hover,
@@ -116,7 +116,7 @@ input[type="radio"].visually-hidden {
   display: inline-flex;
   flex-wrap: wrap;
 
-  background: lightyellow;
+  /*background: lightyellow;*/
 }
 
 .top-menu li a {
@@ -138,7 +138,7 @@ input[type="radio"].visually-hidden {
 
   display: flex;
 
-  background: lightyellow;
+  /*background: lightyellow;*/
 }
 
 .cart a {
@@ -167,19 +167,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid #fb565a;
 }
 
-.page-title {
-  margin: 0;
-  padding: 0;
-  padding-top: 67px;
-  padding-left: 215px;
-
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-  color: #000000;
-}
-
- /*------Стилизация слайдера ------*/
+/*------Стилизация слайдера ------*/
 .slider {
   position: relative;
 
@@ -858,82 +846,34 @@ tr span {
 
 /*----------------------------------------*/
 /* ------Стилизация страницы магазина------*/
+.page-title {
+  margin: 0;
+  padding-top: 65px;
 
-.sort {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sort a {
-  padding-right: 25px;
-
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-}
-
-.sort a:hover,
-.sort a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.sort a:active,
-.sort .active {
-  color: rgba(0, 0, 0, 1);
-}
-
-.templates-filter {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-.templates-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 765px;
-  justify-content: space-between;
-}
-
-.templates-item-hover h3 a {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.templates-item-hover p {
-  line-height: 18px;
-  color: #666666;
-}
-
-.price-button {
-  display: table-cell;
-
-  width: 200px;
-  height: 50px;
-
-  line-height: 18px;
+  font-size: 55px;
+  line-height: 55px;
   font-weight: 500;
+  color: #000000;
 
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #fb565a;
-  border-radius: 3px;
+  display: block;
+  min-height: 230px;
+  background-color: #eeeeee;
 }
 
-.price-button:hover,
-.price-button:focus {
-  background-color: #e74246;
+.inner {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: lightgrey;
 }
 
-.price-button:active {
-  background-color: #d7373b;
-  box-shadow: inset 0px 3px #c13135;
+.filters {
+  width: 320px;
+  min-height: 840px;
+
+  background-color: lightgreen;
+  border: 1px dashed green;
 }
 
 .filters legend,
@@ -984,12 +924,220 @@ tr span {
   background-color: #d5d5d5;
   border-top: 3px solid #bfbfbf;
 }
+/*.sort {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort a {
+  padding-right: 25px;
+
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}*/
+
+.sort a:hover,
+.sort a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active,
+.sort .active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-content {
+  padding: 0;
+
+  width: 820px;
+  min-height: 2215px;
+
+  background-color: lightgreen;
+}
+
+.templates {
+  width: 820px;
+  min-height: 2215px;
+
+  display: block;
+}
+
+.templates-filter {
+  margin: 0;
+  margin-bottom: 63px;
+  padding: 0;
+
+  min-height: 50px;
+
+  display: flex;
+
+  background-color: lightblue;
+}
+
+.templates-filter span {
+  margin-right: 0px;
+  padding: 0;
+
+  width: 360px;
+
+  background-color: lightyellow;
+
+
+}
+
+.templates-filter .sort {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  width: 360px;
+
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.3;
+  text-transform: uppercase;
+
+  display: flex;
+
+
+  background-color: lightyellow;
+}
+
+.templates-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
+
+  flex-basis: 820px;
+  min-height: 1930px;
+
+  background-color: lightblue;
+}
+
+.templates-item {
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 33px;
+  padding: 0;
+
+  flex-basis: 360px;
+  height: 616px;
+}
+
+.templates-item img {
+  margin: 0;
+  padding: 0;
+
+  width: 360px;
+  height: 576px;
+}
+
+.templates-item::before {
+  content: "";
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+
+  width: 360px;
+  height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+}
+
+.templates-item-hover h3 a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  display: none;
+}
+
+.templates-item-hover p {
+  line-height: 18px;
+  color: #666666;
+
+  display: none;
+}
+
+.price-button {
+  display: table-cell;
+
+  width: 200px;
+  height: 50px;
+
+  line-height: 18px;
+  font-weight: 500;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+
+  display: none;
+}
+
+.price-button:hover,
+.price-button:focus {
+  background-color: #e74246;
+}
+
+.price-button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px #c13135;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
 
 .pagination-item a {
+  display: block;
+
+  padding: 10px 19px;
+  margin-right: 5px;
 
   line-height: 18px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #eeeeee;
+
+
 }
 
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+/*----------------------------------------*/
+/* ------Стилизация всплывающего окна-----*/
+.popup {
+  display: none;
+}
