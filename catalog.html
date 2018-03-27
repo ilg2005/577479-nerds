@@ -34,49 +34,59 @@
     <div class="container inner">
       <aside class="filters" aria-label="Фильтры">
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="filters-price">
+          <fieldset class="filters-item price">
             <legend>Стоимость</legend>
-              <!--Как нормально сделать двойной ползунок??-->
-              <input type="range" min="0" max="23000" value="15000" name="thumb">
-            <pre>От <span>0</span> до <span>15 000</span></pre>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
           </fieldset>
-          <fieldset class="filters-grid">
+          <fieldset class="filters-item grid">
             <legend>Сетка</legend>
             <ul>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input class="visually-hidden" id="adaptive" name="grid" type="radio" value="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
               </li>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input class="visually-hidden" id="fixed" name="grid" type="radio" value="fixed">
                 <label for="fixed">Фиксированная</label>
               </li>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input class="visually-hidden" id="responsive" name="grid" type="radio" value="responsive">
                 <label for="responsive">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filters-features">
+          <fieldset class="filters-item features">
             <legend>Особенности</legend>
             <ul>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input  class="visually-hidden" id="slider" name="slider" type="checkbox" checked>
                 <label for="slider">Слайдер</label>
               </li>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input  class="visually-hidden" id="advantages" name="advantages" type="checkbox">
                 <label for="advantages">Блок преимуществ</label>
               </li>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input  class="visually-hidden" id="news" name="news" type="checkbox" checked>
                 <label for="news">Новости</label>
               </li>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input  class="visually-hidden" id="gallery" name="gallery" type="checkbox">
                 <label for="gallery">Галерея</label>
               </li>
-              <li class="filters-option">
+              <li class="filters-item-option">
                 <input  class="visually-hidden" id="cart" name="cart" type="checkbox">
                 <label for="cart">Корзина</label>
               </li>
