@@ -114,6 +114,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.index:hover,
+.index:focus,
+.index:active {
+  opacity: 1.0;
+}
+
 .top-menu {
   margin: 0;
 
