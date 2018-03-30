@@ -1105,7 +1105,7 @@ tr span {
 
   background-color: lightyellow;
 }
-
+/*-------------Стилизация шаблонов-------------------*/
 .templates-list {
   margin: 0;
   padding: 0;
@@ -1119,7 +1119,7 @@ tr span {
   align-content: flex-start;
 
   flex-basis: 820px;
-  min-height: 1930px;
+  min-height: 1915px;
 
   background-color: lightblue;
 }
@@ -1132,6 +1132,8 @@ tr span {
 
   flex-basis: 360px;
   height: 616px;
+
+  position: relative;
 }
 
 .templates-item img {
@@ -1146,6 +1148,7 @@ tr span {
   content: "";
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
+  opacity: 0.12;
 
   width: 360px;
   height: 40px;
@@ -1156,41 +1159,85 @@ tr span {
   display: block;
 }
 
+.templates-item:hover.templates-item::before,
+.templates-item:focus.templates-item::before {
+  opacity: 1.0;
+}
+
+.templates-item:hover .templates-item-hover,
+.templates-item:focus .templates-item-hover {
+  display: block;
+}
+
+.templates-item-hover {
+  display: none;
+
+  width: 360px;
+  height: 230px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  text-align: center;
+
+  background-color: #eeeeee;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.templates-item:nth-child(3) .templates-item-hover,
+.templates-item:nth-child(4) .templates-item-hover {
+  padding-top: 30px;
+}
+
+.templates-item-hover h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
 .templates-item-hover h3 a {
+  margin: 0;
+  padding: 0;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-
-  display: none;
 }
 
 .templates-item-hover p {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
   line-height: 18px;
   color: #666666;
-
-  display: none;
 }
 
 .price-button {
-  display: table-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
 
   width: 200px;
   height: 50px;
 
+
   line-height: 18px;
   font-weight: 500;
 
-  text-align: center;
+
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #fb565a;
   border-radius: 3px;
-
-  display: none;
 }
 
 .price-button:hover,
@@ -1202,6 +1249,8 @@ tr span {
   background-color: #d7373b;
   box-shadow: inset 0px 3px #c13135;
 }
+
+
 /*------------- Переключение страниц-------------------*/
 .pagination-list {
   display: flex;
