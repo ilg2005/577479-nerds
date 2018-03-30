@@ -91,6 +91,15 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.navigation-current a {
+  border-bottom: 2px solid #fb565a;
+}
+
+.navigation-current a:hover,
+.navigation-current a:focus {
+   color: #000000;
+}
+
 .logo {
   margin-right: 200px;
  /* background: lightyellow;*/
@@ -161,10 +170,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/cart-icon.svg"); /*Почему работает только при адресе ..*/
   background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.navigation-current a {
-  border-bottom: 2px solid #fb565a;
 }
 
 /*------Стилизация слайдера ------*/
