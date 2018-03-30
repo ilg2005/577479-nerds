@@ -73,6 +73,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   /*background: lightblue;*/
 }
 
@@ -80,6 +81,8 @@ input[type="radio"].visually-hidden {
   display: block;
 
   color: #000000;
+
+  user-select: none;
 }
 
 .navigation a:hover,
