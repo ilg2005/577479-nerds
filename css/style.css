@@ -908,7 +908,11 @@ tr span {
 }
 
 /*-------Фильтр стоимости с двумя ползунками------------*/
-
+.price {
+  margin: 0;
+  margin-bottom: 55px;
+  padding: 0;
+}
 
 .range-filter {
   width: 260px;
@@ -1001,11 +1005,79 @@ tr span {
 }
 
 /*------------------------------------------------*/
+/*--------------Фильтр сетки (radio)--------------*/
+.grid {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+  border: 1px solid red;
+}
+
+.grid legend {
+  margin-bottom: 15px;
+}
+.grid ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
 
 .filters-item-option {
   line-height: 20px;
   color: #283136;
+
+  margin-bottom: 20px;
+  padding-left: 35px;
+
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+
 }
+
+.filters-item-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filters-input-radio + label::before {
+  content: "";
+
+  position: absolute;
+  left: -32px;
+  top: 0;
+
+  background-image: url("../image/radio-off.svg");
+
+   /*width: 25px;
+  height: 25px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;*/
+}
+
+/*.filters-input-radio + label::before {
+
+}*/
+
+/*.filters-item-option label::before {
+  content: "";
+
+  position: absolute;
+  left: -32px;
+  top: 0;
+
+  width: 25px;
+  height: 25px;
+
+  border: 2px solid #000000;
+
+
+}*/
 
 .show-btn {
   width: 260px;
