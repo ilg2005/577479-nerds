@@ -888,17 +888,18 @@ tr span {
   padding-top: 55px;
 
   background-color: lightgreen;
-  border: 1px dashed green;
+  /*border: 1px dashed green;*/
 }
 
 .filters-item {
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 
   border: none;
 }
 
-.filters legend,
+.filters-item legend,
 .templates-filter span {
   font-size: 18px;
   line-height: 30px;
@@ -906,6 +907,7 @@ tr span {
   color: #000000;
   text-transform: uppercase;
 }
+
 
 /*-------Фильтр стоимости с двумя ползунками------------*/
 .price {
@@ -923,8 +925,8 @@ tr span {
   position: relative;
 
   height: 80px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  margin-bottom: 13px;
+  padding-top: 38px;
   padding-right: 21px;
   padding-left: 18px;
 
@@ -948,7 +950,7 @@ tr span {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
 
   width: 4px;
@@ -987,8 +989,9 @@ tr span {
 
 .price-controls input {
   width: 80px;
+  height: 37px;
   padding: 8px 10px;
-  margin-left: 10px;
+  margin-left: 8px;
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px; /*Первые два свойства не наследуются? */
@@ -1002,23 +1005,16 @@ tr span {
 
 .max-price {
   text-align: right;
+  /*padding-right: 1px;*/
 }
 
 /*------------------------------------------------*/
-/*--------------Фильтр сетки (radio)--------------*/
-.grid {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 55px;
-  border: 1px solid red;
-}
+/*--------------Фильтры сетки (.grid) и особенностей (.features)--------------*/
 
-.grid legend {
-  margin-bottom: 15px;
-}
-.grid ul {
+.filters-item ul {
   margin: 0;
   padding: 0;
+  padding-top: 15px;
 
   list-style: none;
 }
@@ -1028,11 +1024,10 @@ tr span {
   color: #283136;
 
   margin-bottom: 20px;
-  padding-left: 35px;
+  padding-left: 36px;
 
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-
+  /*background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;*/
 }
 
 .filters-item-option label {
@@ -1044,40 +1039,68 @@ tr span {
   user-select: none;
 }
 
-.filters-input-radio + label::before {
+.filters-input + label::before {
   content: "";
 
   position: absolute;
-  left: -32px;
-  top: 0;
+  left: -35px;
+  top: -2px;
 
-  background-image: url("../image/radio-off.svg");
-
-   /*width: 25px;
-  height: 25px;
-
-  border: 2px solid #000000;
-  border-radius: 50%;*/
+  background-repeat: no-repeat;
+  opacity: 0.4;
 }
 
-/*.filters-input-radio + label::before {
-
-}*/
-
-/*.filters-item-option label::before {
-  content: "";
-
-  position: absolute;
-  left: -32px;
-  top: 0;
-
+.filters-input-radio + label::before {
   width: 25px;
   height: 25px;
 
-  border: 2px solid #000000;
+  background-image: url("../img/radio-off.svg");
+}
+
+.filters-input-checkbox + label::before {
+  width: 23px;
+  height: 23px;
+
+  top: -1px;
+
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.filters-input-radio:checked + label::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filters-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filters-input:hover + label,
+.filters-input:focus + label {
+  color: #000000;
+}
+
+.filters-input:hover + label::before,
+.filters-input:focus + label::before {
+  opacity: 1.0;
+}
 
 
-}*/
+.filters-input:disabled + label {
+  color: #283136;
+  opacity: 0.3;
+}
+
+.filters-input:disabled + label::before {
+  opacity: 0.1;
+}
+
+.grid {
+  margin-bottom: 26px;
+}
+
+.features {
+  margin-bottom: 30px;
+}
 
 .show-btn {
   width: 260px;
@@ -1107,6 +1130,8 @@ tr span {
   background-color: #d5d5d5;
   border-top: 3px solid #bfbfbf;
 }
+
+/*--------------------Фильтр сортировки--------------*/
 /*.sort {
   display: flex;
   justify-content: flex-end;
