@@ -1132,32 +1132,9 @@ tr span {
 }
 
 /*--------------------Фильтр сортировки--------------*/
-/*.sort {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sort a {
-  padding-right: 25px;
-
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-}*/
-
-.sort a:hover,
-.sort a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.sort a:active,
-.sort-active {
-  color: rgba(0, 0, 0, 1);
-}
-
-.catalog-content {
+.templates {
   padding: 0;
-  padding-top: 55px;
+  padding-top: 50px;
 
   width: 820px;
   min-height: 2215px;
@@ -1165,19 +1142,12 @@ tr span {
   background-color: lightgreen;
 }
 
-.templates {
-  width: 820px;
-  min-height: 2215px;
-
-  display: block;
-}
-
 .templates-filter {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
 
-  min-height: 50px;
+  min-height: 55px;
 
   display: flex;
 
@@ -1187,22 +1157,24 @@ tr span {
 .templates-filter span {
   margin-right: 0px;
   padding: 0;
+  padding-top: 2px;
+  padding-left: 60px;
 
   width: 360px;
 
+
   background-color: lightyellow;
-
-
 }
 
-.templates-filter .sort {
+.sort {
   margin: 0;
   padding: 0;
+  padding-top: 9px;
+  /*padding-left: 99px;*/
 
   list-style: none;
 
-  width: 360px;
-
+  width: 460px;
 
   font-size: 14px;
   line-height: 18px;
@@ -1212,9 +1184,55 @@ tr span {
   text-transform: uppercase;
 
   display: flex;
-
+  justify-content: flex-end;
+  align-items: baseline;
 
   background-color: lightyellow;
+}
+
+.sort li {
+
+
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+
+  display: flex;
+}
+
+
+.arrow a {
+
+  width: 11px;
+  height: 10px;
+
+  display: flex;
+}
+
+
+
+.down {
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+
+  margin-left: 45px;
+}
+
+.up {
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+
+  margin-left: 20px;
+}
+
+.sort a:hover,
+.sort a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort a:active,
+.sort-active {
+  color: rgba(0, 0, 0, 1);
 }
 /*-------------Стилизация шаблонов-------------------*/
 .templates-list {
