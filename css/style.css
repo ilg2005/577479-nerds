@@ -1150,32 +1150,44 @@ tr span {
   min-height: 55px;
 
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 820px;
 
   background-color: lightblue;
 }
 
 .templates-filter span {
+  margin: 0;
+  margin-top: 1px;
   margin-right: 0px;
+  margin-left: 59px;
   padding: 0;
-  padding-top: 2px;
-  padding-left: 60px;
 
-  width: 360px;
-
+  /*width: 360px;*/
 
   background-color: lightyellow;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-basis: 360px;
 }
 
 .sort {
   margin: 0;
   padding: 0;
-  padding-top: 9px;
-  /*padding-left: 99px;*/
 
   list-style: none;
 
-  width: 460px;
+  display: flex;
 
+  background-color: lightyellow;
+}
+
+.by-feature a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -1183,57 +1195,45 @@ tr span {
   opacity: 0.3;
   text-transform: uppercase;
 
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-
-  background-color: lightyellow;
 }
 
-.sort li {
-
-
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-
-  display: flex;
+.by-feature li:not(:first-child) {
+  margin-left: 25px;
 }
 
 
-.arrow a {
-
+.by-order a {
   width: 11px;
   height: 10px;
 
   display: flex;
+  margin-left: 19px;
+
+  opacity: 0.2;
 }
 
-
-
-.down {
+.descending a {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
-
-  margin-left: 45px;
 }
 
-.up {
+.ascending a {
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
-
-  margin-left: 20px;
 }
 
 .sort a:hover,
 .sort a:focus {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .sort a:active,
-.sort-active {
-  color: rgba(0, 0, 0, 1);
+.sort .active,
+.sort .active:hover,
+.sort .active:focus {
+  opacity: 1.0;
 }
+
 /*-------------Стилизация шаблонов-------------------*/
 .templates-list {
   margin: 0;
