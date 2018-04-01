@@ -1455,4 +1455,181 @@ tr span {
 /* ------Стилизация всплывающего окна-----*/
 .popup {
   display: none;
+
+  position: absolute; /*Здесь должно быть fixed?*/
+  top: 2442px;
+  left: 240px;
+
+  width: 960px;
+  height: 590px;
+
+  padding: 68px 99px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+
+  background-color: #ffffff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 80px;
+  right: 90px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  border: 0;
+  background-color: transparent;
+
+  opacity: 0.3;
+
+  cursor: pointer;
+}
+
+.close-btn::before,
+.close-btn::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: -3px;
+
+  width: 26px;
+  height: 4px;
+
+  background-color: #fb565a;
+}
+
+.close-btn::before {
+  transform: rotate(45deg);
+}
+
+.close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  opacity: 1.0;
+}
+
+.close-btn:active {
+  opacity: 0.1;
+}
+
+.popup h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.popup-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup-form p:nth-child(1),
+.popup-form p:nth-child(2) {
+  flex-basis: 360px;
+}
+
+.popup-form p:nth-child(3) {
+  flex-basis: 760px;
+  margin-bottom: 40px;
+}
+
+.popup-form label {
+  display: block;
+
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  margin-bottom: 9px;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="email"] {
+  font: inherit;
+  line-height: 18px;
+  opacity: 0.5;
+
+  width: 362px;
+  padding: 15px;
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.popup-form textarea {
+  font: inherit;
+  line-height: 18px;
+  opacity: 0.5;
+
+  width: 762px;
+  height: 120px;
+
+  padding: 13px 14px;
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.popup-form input:hover,
+.popup-form textarea:hover {
+  border-color: #b4b9bb;
+}
+
+.popup-form input:focus,
+.popup-form textarea:focus {
+  border-color: #000000;
+  opacity: 1.0;
+  outline: none;
+}
+
+.popup-form input:invalid {
+  border-color: #e74246;
+  opacity: 1.0;
+
+  color: #e74246;
+}
+
+.send-btn {
+  margin: 0;
+  padding: 0;
+
+  width: 260px;
+  height: 50px;
+  border-radius: 3px;
+
+  background-color: #fb565a;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #e74246;
+}
+
+.send-btn:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
