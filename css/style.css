@@ -879,7 +879,7 @@ tr span {
   display: flex;
   justify-content: space-between;
 
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
 }
 
 .filters {
@@ -887,7 +887,7 @@ tr span {
   min-height: 840px;
   padding-top: 55px;
 
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
   /*border: 1px dashed green;*/
 }
 
@@ -1139,7 +1139,7 @@ tr span {
   width: 820px;
   min-height: 2215px;
 
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
 }
 
 .templates-filter {
@@ -1154,7 +1154,7 @@ tr span {
   align-items: baseline;
   width: 820px;
 
-  background-color: lightblue;
+  /*background-color: lightblue;*/
 }
 
 .templates-filter span {
@@ -1166,7 +1166,7 @@ tr span {
 
   /*width: 360px;*/
 
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
 }
 
 .wrapper {
@@ -1184,7 +1184,7 @@ tr span {
 
   display: flex;
 
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
 }
 
 .by-feature a {
@@ -1250,7 +1250,7 @@ tr span {
   flex-basis: 820px;
   min-height: 1915px;
 
-  background-color: lightblue;
+  /*background-color: lightblue;*/
 }
 
 .templates-item {
@@ -1392,7 +1392,7 @@ tr span {
 
   list-style: none;
 
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
 }
 
 .pagination-item {
