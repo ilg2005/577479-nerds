@@ -60,6 +60,7 @@ input[type="radio"].visually-hidden {
   padding-top: 50px;
 
   background-color: #eeeeee;
+  background-color: lightgreen;
 }
 
 .navigation {
@@ -101,6 +102,7 @@ input[type="radio"].visually-hidden {
 
 .logo {
   margin-right: 200px;
+  background: lightyellow;
 }
 
 .logo:hover,
@@ -115,7 +117,7 @@ input[type="radio"].visually-hidden {
 .index:hover,
 .index:focus,
 .index:active {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .top-menu {
@@ -128,7 +130,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.top-menu li a {
+.top-menu a {
   margin-right: 48px;
   padding: 5px 0;
 }
@@ -171,6 +173,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   background-color: #eeeeee;
+  background-color: lightblue;
 }
 
 .slider-controls {
@@ -1063,7 +1066,7 @@ tr span {
 
 .filters-input:hover + label::before,
 .filters-input:focus + label::before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 
@@ -1209,7 +1212,7 @@ tr span {
 .sort .active,
 .sort .active:hover,
 .sort .active:focus {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 /*-------------Стилизация шаблонов-------------------*/
@@ -1263,7 +1266,7 @@ tr span {
 
 .templates-item:hover.templates-item::before,
 .templates-item:focus.templates-item::before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .templates-item:hover .templates-item-hover,
@@ -1470,7 +1473,7 @@ tr span {
 
 .close-btn:hover,
 .close-btn:focus {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .close-btn:active {
@@ -1547,14 +1550,14 @@ tr span {
 .popup-form textarea:focus {
   border-color: #000000;
   outline: none;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .popup-form input:invalid {
   color: #e74246;
 
   border-color: #e74246;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .send-btn {
