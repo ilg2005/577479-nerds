@@ -69,7 +69,7 @@ input[type="radio"].visually-hidden {
 
   border-radius: 3px;
 }
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â .page-header------*/
+/* ------Styling of .page-header------*/
 
 .page-header {
   padding-top: 49px;
@@ -148,7 +148,8 @@ input[type="radio"].visually-hidden {
   display: block;
 
   margin-right: 46px;
-  padding-top: 16px;
+  padding-top: 22px;
+  padding-bottom: 4px;
 }
 
 .cart {
@@ -182,7 +183,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-/*------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘ÂÃÂ»ÃÂ°ÃÂ¹ÃÂ´ÃÂµÃ‘â‚¬ÃÂ° ------*/
+/*------Styling of the slider ------*/
 .slider {
   position: relative;
 
@@ -329,7 +330,7 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ´ÃÂµÃÂ»ÃÂ° "ÃÂ£Ã‘ÂÃÂ»Ã‘Æ’ÃÂ³ÃÂ¸ ÃÂ¸ ÃÂ¿Ã‘â‚¬ÃÂµÃÂ¸ÃÂ¼Ã‘Æ’Ã‘â€°ÃÂµÃ‘ÂÃ‘â€šÃÂ²ÃÂ°" ------*/
+/* ------ Styling of the section "Services and benefits" ------*/
 .services {
   padding-top: 81px;
 }
@@ -453,7 +454,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ´ÃÂµÃÂ»ÃÂ° "ÃÅ¾ Ã‘ÂÃ‘â€šÃ‘Æ’ÃÂ´ÃÂ¸ÃÂ¸" ------*/
+/* ------ Styling of the section "Studio" ------*/
 .studio {
   display: flex;
   justify-content: space-between;
@@ -584,7 +585,7 @@ tr span {
   padding-left: 20px;
 }
 /*-----------------------------------------------------*/
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘ÂÃÂµÃÂºÃ‘â€ ÃÂ¸ÃÂ¸ "ÃÅ¡ÃÂ»ÃÂ¸ÃÂµÃÂ½Ã‘â€šÃ‘â€¹" Ã‘Â ÃÂ»ÃÂ¾ÃÂ³ÃÂ¾Ã‘â€šÃÂ¸ÃÂ¿ÃÂ°ÃÂ¼ÃÂ¸------*/
+/* ------ Styling of the section "Customers" with logos------*/
 .customers {
   /* min-height: 185px; */
   margin-bottom: 80px;
@@ -651,11 +652,11 @@ tr span {
   display: none;
 }
 /*------------------------------------------------*/
-/*-------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘â‚¬ÃÂ°ÃÂ·ÃÂ´ÃÂµÃÂ»ÃÂ° "ÃÅ¡ÃÂ¾ÃÂ½Ã‘â€šÃÂ°ÃÂºÃ‘â€šÃ‘â€¹" ÃÂ¸ ÃÂºÃÂ°Ã‘â‚¬Ã‘â€šÃ‘â€¹----*/
+/*------- Styling of the section "Contacts" and map----*/
 .map {
   position: relative;
 
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
   margin-bottom: 65px;
   padding: 0;
@@ -664,7 +665,7 @@ tr span {
 .address {
   position: absolute;
   top: 55px;
-  left: 140px;
+  left: 0;
 
   width: 319px;
   height: 308px;
@@ -694,7 +695,7 @@ tr span {
 }
 
 .address p:nth-child(3) {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   line-height: 18px;
   color: #666666;
 }
@@ -718,20 +719,22 @@ tr span {
   box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 
-.map-marker {
+.map::after {
+  content: "";
   position: absolute;
   top: 90px;
-  left: 685px;
+  left: 544px;
 
   width: 367px;
   height: 190px;
-  margin: 0;
-  padding: 0;
 
   background-color: transparent;
+  background-image: url("../img/map-marker.png");
+  background-size: 367px 190px;
+  background-repeat: no-repeat;
 }
 /*----------------------------------------*/
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â .page-footer----------*/
+/* ------ Styling of .page-footer----------*/
 .page-footer {
   display: flex;
   justify-content: flex-start;
@@ -756,11 +759,14 @@ tr span {
   height: 78px;
   margin: 0;
   margin-right: 15px;
-  margin-right: 15px;
   padding: 0;
 
   background-color: #e1e1e1;
   border-radius: 50%;
+}
+
+.social-button.fb {
+  margin-right: 10px;
 }
 
 .social-button:hover,
@@ -823,11 +829,10 @@ tr span {
 }
 
 /*----------------------------------------*/
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ°ÃÂ½ÃÂ¸Ã‘â€ Ã‘â€¹ ÃÂ¼ÃÂ°ÃÂ³ÃÂ°ÃÂ·ÃÂ¸ÃÂ½ÃÂ°------*/
+/* ------ Styling of "catalog" inner page------*/
 .page-title {
   display: block;
-  /*width: 1440px;*/
-  min-height: 230px;
+  min-height: 241px;
   margin: 0;
   padding-top: 76px;
 
@@ -874,7 +879,7 @@ tr span {
 }
 
 
-/*-------ÃÂ¤ÃÂ¸ÃÂ»Ã‘Å’Ã‘â€šÃ‘â‚¬ Ã‘ÂÃ‘â€šÃÂ¾ÃÂ¸ÃÂ¼ÃÂ¾Ã‘ÂÃ‘â€šÃÂ¸ Ã‘Â ÃÂ´ÃÂ²Ã‘Æ’ÃÂ¼Ã‘Â ÃÂ¿ÃÂ¾ÃÂ»ÃÂ·Ã‘Æ’ÃÂ½ÃÂºÃÂ°ÃÂ¼ÃÂ¸------------*/
+/*------- Price filter with two thumbs------------*/
 .price {
   margin: 0;
   margin-bottom: 55px;
@@ -957,7 +962,7 @@ tr span {
   margin-left: 8px;
   padding: 8px 10px;
 
-  font-size: 16px; /*ÃÅ¸ÃÂµÃ‘â‚¬ÃÂ²Ã‘â€¹ÃÂµ ÃÂ´ÃÂ²ÃÂ° Ã‘ÂÃÂ²ÃÂ¾ÃÂ¹Ã‘ÂÃ‘â€šÃÂ²ÃÂ° ÃÂ½ÃÂµ ÃÂ½ÃÂ°Ã‘ÂÃÂ»ÃÂµÃÂ´Ã‘Æ’Ã‘Å½Ã‘â€šÃ‘ÂÃ‘Â? */
+  font-size: 16px; /*Первые два свойства не наследуются? */
   font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #283136;
@@ -973,7 +978,7 @@ tr span {
 }
 
 /*------------------------------------------------*/
-/*--------------ÃÂ¤ÃÂ¸ÃÂ»Ã‘Å’Ã‘â€šÃ‘â‚¬Ã‘â€¹ Ã‘ÂÃÂµÃ‘â€šÃÂºÃÂ¸ (.grid) ÃÂ¸ ÃÂ¾Ã‘ÂÃÂ¾ÃÂ±ÃÂµÃÂ½ÃÂ½ÃÂ¾Ã‘ÂÃ‘â€šÃÂµÃÂ¹ (.features)--------------*/
+/*-------------- Filters .grid and .features --------------*/
 
 .filters-item ul {
   margin: 0;
@@ -1089,7 +1094,7 @@ tr span {
   outline: none;
 }
 
-/*--------------------ÃÂ¤ÃÂ¸ÃÂ»Ã‘Å’Ã‘â€šÃ‘â‚¬ Ã‘ÂÃÂ¾Ã‘â‚¬Ã‘â€šÃÂ¸Ã‘â‚¬ÃÂ¾ÃÂ²ÃÂºÃÂ¸--------------*/
+/*-------------------- Sorting filter --------------*/
 .templates {
   width: 820px;
   min-height: 2215px;
@@ -1188,7 +1193,7 @@ tr span {
   opacity: 1;
 }
 
-/*-------------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â Ã‘Ë†ÃÂ°ÃÂ±ÃÂ»ÃÂ¾ÃÂ½ÃÂ¾ÃÂ²-------------------*/
+/*------------- Styling of templates-------------------*/
 .templates-list {
   display: flex;
   flex-basis: 820px;
@@ -1313,14 +1318,14 @@ tr span {
 }
 
 
-/*------------- ÃÅ¸ÃÂµÃ‘â‚¬ÃÂµÃÂºÃÂ»Ã‘Å½Ã‘â€¡ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘ÂÃ‘â€šÃ‘â‚¬ÃÂ°ÃÂ½ÃÂ¸Ã‘â€ -------------------*/
+/*------------- Pagination -------------------*/
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   margin-left: 60px;
   padding: 0;
-  padding-top: 27px;
+  padding-top: 25px;
 
   list-style: none;
 }
@@ -1373,7 +1378,7 @@ tr span {
 }
 
 /*----------------------------------------*/
-/* ------ÃÂ¡Ã‘â€šÃÂ¸ÃÂ»ÃÂ¸ÃÂ·ÃÂ°Ã‘â€ ÃÂ¸Ã‘Â ÃÂ²Ã‘ÂÃÂ¿ÃÂ»Ã‘â€¹ÃÂ²ÃÂ°Ã‘Å½Ã‘â€°ÃÂµÃÂ³ÃÂ¾ ÃÂ¾ÃÂºÃÂ½ÃÂ°-----*/
+/* ------ Styling of popup -----*/
 .popup {
   position: fixed;
   display: none;
