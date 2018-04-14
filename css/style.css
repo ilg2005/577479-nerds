@@ -795,6 +795,8 @@ tr span {
   background-image: url("../img/map-marker.png");
   background-size: 367px 190px;
   background-repeat: no-repeat;
+
+  z-index: 1;
 }
 /*----------------------------------------*/
 /* ------ Styling of .page-footer----------*/
