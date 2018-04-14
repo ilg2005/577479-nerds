@@ -663,6 +663,22 @@ tr span {
   padding: 0;
 }
 
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 .address {
   position: absolute;
   top: 53px;
@@ -672,6 +688,8 @@ tr span {
   margin: 0;
   padding: 50px 50px 0;
   background-color: #ffffff;
+
+  z-index: 3;
 }
 
 .address-title {
@@ -1359,8 +1377,8 @@ tr span {
   position: fixed;
   display: none;
 
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  bottom: 50%;
   left: 0;
   right: 0;
 
@@ -1369,8 +1387,60 @@ tr span {
   margin: auto;
   padding: 68px 99px;
 
+  z-index: 100;
+
   background-color: #ffffff;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.popup-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
 
 .close-btn {
@@ -1457,6 +1527,7 @@ tr span {
 .popup-form input[type="text"],
 .popup-form input[type="email"] {
   width: 362px;
+  height: 50px;
   padding: 15px;
 
   font: inherit;
@@ -1469,7 +1540,7 @@ tr span {
 
 .popup-form textarea {
   width: 762px;
-  min-height: 120px;
+  height: 120px;
   padding: 13px 14px;
 
   font: inherit;
@@ -1503,6 +1574,7 @@ tr span {
   width: 260px;
 
   margin: 0;
+  margin-bottom: 85px;
   padding: 0;
 
   background-color: #fb565a;
