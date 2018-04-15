@@ -58,15 +58,10 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  text-align: center;
+
+  padding: 16px 0;
 
   min-height: 50px;
 
@@ -1421,6 +1416,7 @@ tr span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  align-items: baseline;
   margin: 0;
   margin-left: 60px;
   padding: 0;
@@ -1432,6 +1428,7 @@ tr span {
 .pagination-item {
   width: 50px;
   margin-right: 10px;
+  padding: 0;
 
   background-color: #eeeeee;
 }
@@ -1446,6 +1443,8 @@ tr span {
 }
 
 .pagination-item a {
+  display: block;
+
   padding: 15px;
 
   color: #000000;
