@@ -784,16 +784,11 @@ tr span {
 
 /*----------------------------------------*/
 /* ------ Styling of .page-footer----------*/
-.page-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.page-footer .container {
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: space-between;
+
   min-height: 215px;
-  margin: 0;
-  padding: 0;
 }
 
 .social {
@@ -874,12 +869,12 @@ tr span {
 }
 
 .footer-slogan {
-  min-width: 600px;
+  min-width: 800px;
   min-height: 200px;
   margin: 0;
   padding: 0;
   padding-top: 11px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 .footer-slogan p:first-child {
