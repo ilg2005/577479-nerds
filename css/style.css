@@ -785,8 +785,12 @@ tr span {
 /*----------------------------------------*/
 /* ------ Styling of .page-footer----------*/
 .page-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   min-height: 155px;
 }
@@ -1399,7 +1403,9 @@ tr span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: 0;
   margin-left: 60px;
   padding: 0;
