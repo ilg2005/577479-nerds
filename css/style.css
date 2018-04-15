@@ -788,7 +788,7 @@ tr span {
   display: flex;
   justify-content: space-between;
 
-  min-height: 215px;
+  min-height: 155px;
 }
 
 .social {
@@ -870,7 +870,6 @@ tr span {
 
 .footer-slogan {
   min-width: 800px;
-  min-height: 200px;
   margin: 0;
   padding: 0;
   padding-top: 11px;
