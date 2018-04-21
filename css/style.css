@@ -929,7 +929,7 @@ tr span {
 }
 
 .filters-item legend,
-.templates-filter span {
+.content-filter span {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -1160,14 +1160,14 @@ tr span {
 }
 
 /*-------------------- Sorting filter --------------*/
-.templates {
+.content {
   width: 820px;
   min-height: 2217px;
   padding: 0;
   padding-top: 50px;
 }
 
-.templates-filter {
+.content-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1184,7 +1184,7 @@ tr span {
   padding: 0;
 }
 
-.templates-filter span {
+.content-filter span {
   margin: 0;
 
   margin-right: 0;
@@ -1265,8 +1265,8 @@ tr span {
   opacity: 1;
 }
 
-/*------------- Styling of templates-------------------*/
-.templates-list {
+/*------------- Styling of content-------------------*/
+.content-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1287,7 +1287,7 @@ tr span {
   list-style: none;
 }
 
-.templates-item {
+.content-item {
   position: relative;
 
   -ms-flex-preferred-size: 360px;
@@ -1303,14 +1303,14 @@ tr span {
   border-radius: 5px;
 }
 
-.templates-item img {
+.content-item img {
   width: 360px;
   height: 576px;
   margin: 0;
   padding: 0;
 }
 
-.templates-item::before {
+.content-item::before {
   content: "";
 
   display: block;
@@ -1324,17 +1324,17 @@ tr span {
   opacity: 0.12;
 }
 
-.templates-item:hover.templates-item::before,
-.templates-item:focus.templates-item::before {
+.content-item:hover.content-item::before,
+.content-item:focus.content-item::before {
   opacity: 1;
 }
 
-.templates-item:hover .templates-item-hover,
-.templates-item:focus .templates-item-hover {
+.content-item:hover .content-item-hover,
+.content-item:focus .content-item-hover {
   display: block;
 }
 
-.templates-item-hover {
+.content-item-hover {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1351,18 +1351,18 @@ tr span {
   background-color: #eeeeee;
 }
 
-.templates-item:nth-child(3) .templates-item-hover,
-.templates-item:nth-child(4) .templates-item-hover {
+.content-item:nth-child(3) .content-item-hover,
+.content-item:nth-child(4) .content-item-hover {
   padding-top: 30px;
 }
 
-.templates-item-hover h3 {
+.content-item-hover h3 {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
 }
 
-.templates-item-hover h3 a {
+.content-item-hover h3 a {
   margin: 0;
   padding: 0;
 
@@ -1373,7 +1373,7 @@ tr span {
   text-transform: uppercase;
 }
 
-.templates-item-hover p {
+.content-item-hover p {
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
