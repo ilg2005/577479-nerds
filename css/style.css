@@ -1292,9 +1292,10 @@ tr span {
   -ms-flex-preferred-size: 360px;
       flex-basis: 360px;
   height: 618px;
+  overflow: hidden;
   margin: 0;
   margin-bottom: 31px;
-  margin-right: 36px;
+  margin-right: 40px;
 
   border: 1px solid rgba(0, 1, 1, 0.1);
   border-radius: 5px;
@@ -1307,6 +1308,8 @@ tr span {
 .content-item img {
   width: 360px;
   height: 576px;
+  margin: 0;
+  padding: 0;
 }
 
 .content-item::before {
@@ -1338,7 +1341,7 @@ tr span {
 
   display: none;
   width: 360px;
-  height: 230px;
+  min-height: 230px;
   margin: 0;
   padding: 0;
   padding-top: 25px;
