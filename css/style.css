@@ -1307,8 +1307,6 @@ tr span {
 .content-item img {
   width: 360px;
   height: 576px;
-  /*margin: 0;
-  padding: 0;*/
 }
 
 .content-item::before {
@@ -1317,8 +1315,6 @@ tr span {
   display: block;
   width: 360px;
   height: 40px;
-  /*margin: 0;
-  padding: 0;*/
 
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
@@ -1343,8 +1339,8 @@ tr span {
   display: none;
   width: 360px;
   height: 230px;
-  /*margin: 0;
-  padding: 0;*/
+  margin: 0;
+  padding: 0;
   padding-top: 25px;
 
   text-align: center;
