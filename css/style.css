@@ -1288,6 +1288,7 @@ tr span {
 }
 
 .content-item {
+  position: relative;
   -ms-flex-preferred-size: 360px;
       flex-basis: 360px;
   height: 618px;
