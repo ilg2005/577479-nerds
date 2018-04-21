@@ -1291,11 +1291,14 @@ tr span {
   -ms-flex-preferred-size: 360px;
 
       flex-basis: 360px;
-  height: 616px;
+  height: 618px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   margin-left: 40px;
   padding: 0;
+
+  border: 1px solid rgba(0, 1, 1, 0.1);
+  border-radius: 5px;
 }
 
 .templates-item img {
