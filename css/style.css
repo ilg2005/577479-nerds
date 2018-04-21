@@ -906,8 +906,6 @@ tr span {
 }
 
 .inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1282,7 +1280,7 @@ tr span {
   min-height: 1915px;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 19px;
 
   list-style: none;
 }
@@ -1296,7 +1294,7 @@ tr span {
   height: 618px;
   margin: 0;
   margin-bottom: 31px;
-  margin-left: 40px;
+  margin-left: 37px;
   padding: 0;
 
   border: 1px solid rgba(0, 1, 1, 0.1);
@@ -1414,7 +1412,7 @@ tr span {
   margin: 0;
   margin-left: 60px;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 26px;
 
   list-style: none;
 }
