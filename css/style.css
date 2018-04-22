@@ -47,8 +47,9 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+
+  -webkit-clip-path: inset(100%);
 }
 
 .container {
@@ -59,16 +60,13 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: block;
-  text-align: center;
-
-  padding: 16px 0;
-
   min-height: 50px;
+  padding: 16px 0;
 
   font-weight: 500;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
-
   text-transform: uppercase;
 
   border-radius: 3px;
@@ -85,14 +83,15 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 
   font-weight: 500;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
 }
 
 .navigation a {
@@ -101,11 +100,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   -webkit-user-select: none;
-
      -moz-user-select: none;
-
       -ms-user-select: none;
-
           user-select: none;
 }
 
@@ -128,10 +124,9 @@ input[type="radio"].visually-hidden {
 }
 
 .logo a {
-  margin-right: 202px;
-
   width: 160px;
   height: 65px;
+  margin-right: 202px;
 }
 
 .logo:hover,
@@ -153,17 +148,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .top-menu a {
   display: block;
-
   margin-right: 46px;
   padding-top: 22px;
   padding-bottom: 4px;
@@ -178,13 +173,12 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   padding: 0;
   padding-top: 10px;
-
 }
 
 .cart a {
-  display: block;
   position: relative;
 
+  display: block;
   padding-top: 7px;
   padding-left: 40px;
 }
@@ -222,9 +216,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 
   -webkit-transform: translateX(-50%);
-
       -ms-transform: translateX(-50%);
-
           transform: translateX(-50%);
 }
 
@@ -332,11 +324,13 @@ input[type="radio"].visually-hidden {
   max-width: 430px;
   margin: 0;
   margin-bottom: 39px;
+
   color: #283136;
 }
 
 .slider-item-btn {
   width: 240px;
+
   background-color: #fb565a;
 }
 
@@ -362,34 +356,33 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   border-bottom: 2px solid #eeeeee;
+
+  -ms-flex-wrap: wrap;
 }
 
 .services-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-
+  -ms-flex-direction: column;
+      flex-direction: column;
   width: 300px;
   margin-right: 100px;
   padding-top: 146px;
 
-
+  background-repeat: no-repeat;
   background-position: left top;
   background-size: 300px 146px;
-  background-repeat: no-repeat;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
 }
 
 .services-item:nth-child(3n) {
@@ -429,9 +422,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-btn {
-
   width: 160px;
-
   margin-top: auto;
   margin-bottom: 80px;
 }
@@ -487,20 +478,21 @@ input[type="radio"].visually-hidden {
           box-shadow: inset 0 3px #ce961f;
 }
 
-
 /* ------ Styling of the section "Studio" ------*/
 .studio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
   min-height: 528px;
   margin: 0;
   padding: 0;
+
   border-bottom: 2px solid #eeeeee;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
 }
 
 .col-left {
@@ -526,6 +518,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
+
   color: #283136;
 }
 
@@ -533,6 +526,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -547,6 +541,7 @@ input[type="radio"].visually-hidden {
 
 .creation-list li {
   position: relative;
+
   margin-bottom: 24px;
   padding-left: 36px;
 }
@@ -556,8 +551,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 10px;
   left: 0;
+
   width: 25px;
   height: 2px;
+
   background-color: #fb565a;
 }
 
@@ -574,6 +571,7 @@ input[type="radio"].visually-hidden {
   margin-left: 17px;
   padding: 0;
   padding-top: 29px;
+
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -586,8 +584,7 @@ input[type="radio"].visually-hidden {
 
 .percentages-table tr:first-child {
   min-height: 54px;
-  /* margin: 0; */
-  /* padding: 0; */
+
   font-weight: 700;
   font-size: 45px;
   line-height: 45px;
@@ -612,6 +609,7 @@ tr span {
 
 .percentages-table tr:last-child td {
   padding-top: 18px;
+
   line-height: 18px;
 }
 
@@ -622,35 +620,36 @@ tr span {
 .percentages-table tr:last-child td:nth-child(3) {
   padding-left: 20px;
 }
-/*-----------------------------------------------------*/
+
 /* ------ Styling of the section "Customers" with logos------*/
 .customers {
-  /* min-height: 185px; */
   margin-bottom: 80px;
+
   border-bottom: 2px solid #eeeeee;
 }
 
 .customers-wrap {
   margin: 0;
-  padding: 0;
   margin-left: -40px;
+  padding: 0;
 }
 
 .customers-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .customers-list li {
   position: relative;
+
   min-width: 260px;
   min-height: 180px;
   padding-left: 40px;
@@ -694,49 +693,48 @@ tr span {
 .customers-list li:last-child::after {
   display: none;
 }
-/*------------------------------------------------*/
+
 /*------- Styling of the section "Contacts" and map----*/
 .contacts {
-  display: block;
   position: relative;
 
+  display: block;
+  min-height: 416px;
   margin: 0;
   margin-bottom: 68px;
   padding: 0;
-
-  min-height: 416px;
 }
 
 .contacts iframe {
   position: absolute;
-
   top: 0;
   left: 0;
-
   z-index: 2;
 
   border: none;
 }
 
 .map {
-  display: block;
   position: absolute;
   top: 0;
   left: center;
   z-index: 1;
+
+  display: block;
 }
 
 .address {
   position: relative;
   top: 53px;
   left: 0;
+  z-index: 3;
+
   width: 319px;
   min-height: 308px;
   margin: 0;
   padding: 50px 50px 0;
-  background-color: #ffffff;
 
-  z-index: 3;
+  background-color: #ffffff;
 }
 
 .address-title {
@@ -753,12 +751,14 @@ tr span {
 
 .address p:nth-child(2) {
   margin-bottom: 18px;
+
   line-height: 18px;
   color: #666666;
 }
 
 .address p:nth-child(3) {
   margin-bottom: 39px;
+
   line-height: 18px;
   color: #666666;
 }
@@ -782,30 +782,30 @@ tr span {
           box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 
-/*----------------------------------------*/
 /* ------ Styling of .page-footer----------*/
 .page-footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-
+  justify-content: space-between;
   min-height: 155px;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
 }
 
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 380px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  -ms-flex-wrap: wrap;
 }
 
 .social li {
@@ -820,6 +820,7 @@ tr span {
   margin: 0;
   margin-right: 13px;
   padding: 0;
+
   background-color: #e1e1e1;
   border-radius: 50%;
 }
@@ -888,7 +889,6 @@ tr span {
   font-size: 36px;
 }
 
-/*----------------------------------------*/
 /* ------ Styling of "catalog" inner page------*/
 .page-title {
   display: block;
@@ -909,15 +909,15 @@ tr span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
+
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
 }
 
 .filters {
   width: 320px;
   min-height: 840px;
-
   margin: 0;
   padding: 0;
   padding-top: 55px;
@@ -939,7 +939,6 @@ tr span {
   color: #000000;
   text-transform: uppercase;
 }
-
 
 /*------- Price filter with two thumbs------------*/
 .price {
@@ -985,7 +984,6 @@ tr span {
   left: 0;
 
   -webkit-box-sizing: content-box;
-
           box-sizing: content-box;
   width: 4px;
   height: 4px;
@@ -1042,7 +1040,6 @@ tr span {
 }
 
 /*-------------- Filters .grid and .features --------------*/
-
 .filters-item ul {
   margin: 0;
   padding: 0;
@@ -1067,11 +1064,8 @@ tr span {
   cursor: pointer;
 
   -webkit-user-select: none;
-
      -moz-user-select: none;
-
       -ms-user-select: none;
-
           user-select: none;
 }
 
@@ -1122,9 +1116,8 @@ tr span {
 .filters-input:disabled + label {
   color: #283136;
 
-  opacity: 0.3;
-
   cursor: auto;
+  opacity: 0.3;
 }
 
 .filters-input:disabled + label::before {
@@ -1157,9 +1150,9 @@ tr span {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #d5d5d5;
+  outline: none;
   -webkit-box-shadow: inset 0 3px #bfbfbf;
           box-shadow: inset 0 3px #bfbfbf;
-  outline: none;
 }
 
 /*-------------------- Sorting filter --------------*/
@@ -1174,22 +1167,22 @@ tr span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  justify-content: space-between;
+  align-items: baseline;
   width: 820px;
   min-height: 55px;
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
+
+  -webkit-box-align: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-align: baseline;
+  -ms-flex-pack: justify;
 }
 
 .content-filter span {
   margin: 0;
-
   margin-right: 0;
   margin-left: 59px;
   padding: 0;
@@ -1200,14 +1193,15 @@ tr span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 360px;
-      flex-basis: 360px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-basis: 360px;
+  justify-content: space-between;
+  align-items: baseline;
+
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-align: baseline;
+  -ms-flex-pack: justify;
+  -ms-flex-preferred-size: 360px;
 }
 
 .sort {
@@ -1273,14 +1267,9 @@ tr span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 820px;
-      flex-basis: 820px;
-  -ms-flex-wrap: wrap;
+  flex-basis: 820px;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-
+  justify-content: space-between;
   min-height: 1915px;
   margin: 0;
   padding: 0;
@@ -1288,19 +1277,26 @@ tr span {
   padding-left: 60px;
 
   list-style: none;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-preferred-size: 820px;
+  -ms-flex-wrap: wrap;
 }
 
 .content-item {
   position: relative;
-  -ms-flex-preferred-size: 362px;
-      flex-basis: 362px;
+
+  flex-basis: 362px;
   height: 618px;
-  overflow: hidden;
   margin: 0;
   margin-bottom: 31px;
+  overflow: hidden;
 
   border: 1px solid rgba(0, 1, 1, 0.1);
   border-radius: 5px;
+
+  -ms-flex-preferred-size: 362px;
 }
 
 .content-item img {
@@ -1398,24 +1394,24 @@ tr span {
           box-shadow: inset 0 3px #c13135;
 }
 
-
 /*------------- Pagination -------------------*/
 .pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-items: baseline;
   margin: 0;
+  margin-bottom: 58px;
   margin-left: 60px;
   padding: 0;
   padding-top: 26px;
-  margin-bottom: 58px;
 
   list-style: none;
+
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -ms-flex-wrap: wrap;
 }
 
 .pagination-item {
@@ -1437,7 +1433,6 @@ tr span {
 
 .pagination-item a {
   display: block;
-
   padding: 15px;
 
   color: #000000;
@@ -1470,19 +1465,17 @@ tr span {
 /* ------ Styling of popup -----*/
 .popup {
   position: fixed;
-  display: none;
-
   top: 50%;
+  right: 0;
   bottom: 50%;
   left: 0;
-  right: 0;
+  z-index: 100;
 
+  display: none;
   width: 960px;
   min-height: 590px;
   margin: auto;
   padding: 68px 99px;
-
-  z-index: 100;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
@@ -1587,7 +1580,6 @@ tr span {
   display: block;
 
   -webkit-animation: bounce 0.6s;
-
           animation: bounce 0.6s;
 }
 
@@ -1660,23 +1652,26 @@ tr span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: space-between;
+
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
 }
 
 .popup-form p:nth-child(1),
 .popup-form p:nth-child(2) {
+  flex-basis: 360px;
+
   -ms-flex-preferred-size: 360px;
-      flex-basis: 360px;
 }
 
 .popup-form p:nth-child(3) {
-  -ms-flex-preferred-size: 760px;
-      flex-basis: 760px;
+  flex-basis: 760px;
   margin-bottom: 40px;
+
+  -ms-flex-preferred-size: 760px;
 }
 
 .popup-form label {
@@ -1710,11 +1705,11 @@ tr span {
   font: inherit;
   line-height: 18px;
 
-  resize: none;
-
   border: 2px solid #d7dcde;
   border-radius: 3px;
   opacity: 0.5;
+
+  resize: none;
 }
 
 .popup-form input:hover,
@@ -1738,7 +1733,6 @@ tr span {
 
 .send-btn {
   width: 260px;
-
   margin: 0;
   margin-bottom: 85px;
   padding: 0;
@@ -1756,7 +1750,7 @@ tr span {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
+  outline: 0;
   -webkit-box-shadow: inset 0 3px 0 #c13135;
           box-shadow: inset 0 3px 0 #c13135;
-  outline: 0;
 }
