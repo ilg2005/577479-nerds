@@ -1282,7 +1282,8 @@ tr span {
   margin: 0;
   padding: 0;
   padding-top: 19px;
-  padding-left: 60px;
+  /*padding-left: 60px;*/
+  padding-left: 20px;
 
   list-style: none;
 }
@@ -1295,15 +1296,16 @@ tr span {
   overflow: hidden;
   margin: 0;
   margin-bottom: 31px;
-  margin-right: 40px;
+  /*margin-right: 40px;*/
+  margin-left: 40px;
 
   border: 1px solid rgba(0, 1, 1, 0.1);
   border-radius: 5px;
 }
 
-.content-item:nth-child(2n) {
+/*.content-item:nth-child(2n) {
   margin-right: 0;
-}
+}*/
 
 .content-item img {
   width: 360px;
