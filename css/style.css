@@ -1277,35 +1277,31 @@ tr span {
       flex-basis: 820px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   min-height: 1915px;
   margin: 0;
   padding: 0;
   padding-top: 19px;
-  /*padding-left: 60px;*/
-  padding-left: 20px;
+  padding-left: 60px;
 
   list-style: none;
 }
 
 .content-item {
   position: relative;
-  -ms-flex-preferred-size: 360px;
-      flex-basis: 360px;
+  -ms-flex-preferred-size: 362px;
+      flex-basis: 362px;
   height: 618px;
   overflow: hidden;
   margin: 0;
   margin-bottom: 31px;
-  /*margin-right: 40px;*/
-  margin-left: 40px;
 
   border: 1px solid rgba(0, 1, 1, 0.1);
   border-radius: 5px;
 }
-
-/*.content-item:nth-child(2n) {
-  margin-right: 0;
-}*/
 
 .content-item img {
   width: 360px;
