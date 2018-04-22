@@ -1290,7 +1290,7 @@ tr span {
   height: 618px;
   margin: 0;
   margin-bottom: 31px;
-  overflow: hidden;
+  overflow: auto;
 
   border: 1px solid rgba(0, 1, 1, 0.1);
   border-radius: 5px;
@@ -1419,7 +1419,8 @@ tr span {
 }
 
 .pagination-item {
-  width: 50px;
+  display: block;
+  min-width: 50px;
   margin-right: 10px;
   padding: 0;
 
@@ -1432,7 +1433,7 @@ tr span {
 }
 
 .pagination-item:last-child {
-  width: 260px;
+  min-width: 260px;
 }
 
 .pagination-item a {
