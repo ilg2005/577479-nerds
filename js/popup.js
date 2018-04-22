@@ -59,4 +59,4 @@ window.addEventListener("keydown", function (evt) {
         popup.classList.remove("popup-error");
       }
     }
-  });
+});

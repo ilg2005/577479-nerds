@@ -1317,6 +1317,11 @@ tr span {
   opacity: 0.12;
 }
 
+.content-item:hover,
+.content-item:focus {
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+}
+
 .content-item:hover.content-item::before,
 .content-item:focus.content-item::before {
   opacity: 1;
