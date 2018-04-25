@@ -11,52 +11,52 @@ var isStorageSupport = true;
 
 var storageName = "";
 var storageMail = "";
-  try {
-    storageName = localStorage.getItem("userName");
-    storageMail = localStorage.getItem("mail");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+try {
+  storageName = localStorage.getItem("userName");
+  storageMail = localStorage.getItem("mail");
+} catch (err) {
+  isStorageSupport = false;
+}
 
-writeBtn.addEventListener("click", function (evt) {
+writeBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("popup-show");
 
   if (storageName && storageMail) {
-      userName.value = storageName;
-      mail.value = storageMail;
-      message.focus();
-    } else {
-      userName.focus();
-      }
+    userName.value = storageName;
+    mail.value = storageMail;
+    message.focus();
+  } else {
+    userName.focus();
+  }
 });
 
-close.addEventListener("click", function (evt) {
+close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("popup-show");
   popup.classList.remove("popup-error");
 });
 
-form.addEventListener("submit", function (evt) {
-    if (!userName.value || !mail.value || !message.value) {
-      evt.preventDefault();
-      popup.classList.remove("popup-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("popup-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("userName", userName.value);
-        localStorage.setItem("mail", mail.value);
-      }
+form.addEventListener("submit", function(evt) {
+  if (!userName.value || !mail.value || !message.value) {
+    evt.preventDefault();
+    popup.classList.remove("popup-error");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("popup-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("userName", userName.value);
+      localStorage.setItem("mail", mail.value);
     }
+  }
 });
 
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("popup-show")) {
-        popup.classList.remove("popup-show");
-        popup.classList.remove("popup-error");
-      }
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("popup-show")) {
+      popup.classList.remove("popup-show");
+      popup.classList.remove("popup-error");
     }
+  }
 });
