@@ -689,7 +689,8 @@ tr span {
   opacity: 1.0;
 }
 
-.customers-list li:last-child::after {
+.customers-list li:last-child::after,
+.customers-list li:nth-child(4n)::after {
   display: none;
 }
 
