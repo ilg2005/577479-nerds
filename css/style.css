@@ -272,6 +272,10 @@ input[type="radio"].visually-hidden {
   background-position: 100% 0;
 }
 
+.slider-item:nth-child(2) p {
+  width: 550px;
+}
+
 .slider-item:nth-child(3) {
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
