@@ -802,7 +802,7 @@ tr span {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  width: 380px;
+  flex-basis: 380px;
   margin: 0;
   padding: 0;
 
@@ -877,11 +877,11 @@ tr span {
 }
 
 .footer-slogan {
-  min-width: 800px;
+  flex-basis: 800px;
   margin: 0;
   padding: 0;
   padding-top: 11px;
-  padding-left: 40px;
+  padding-left: 26px;
 }
 
 .footer-slogan p:first-child {
