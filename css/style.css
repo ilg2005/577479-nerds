@@ -422,6 +422,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 31px;
   padding: 0;
   padding-top: 15px;
+
+  width: 250px;
 }
 
 .services-btn {
@@ -758,6 +760,8 @@ tr span {
 
 .address p:nth-child(2) {
   margin-bottom: 18px;
+
+  width: 205px;
 
   line-height: 18px;
   color: #666666;
@@ -1380,12 +1384,24 @@ tr span {
 }
 
 .content-item-hover p {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 32px;
   padding: 0;
 
   line-height: 18px;
   color: #666666;
+}
+
+.sedona p,
+.barbershop p,
+.mishka p {
+  width: 180px;
+}
+
+.aplus p,
+.pink p,
+.kvast p {
+  width: 230px;
 }
 
 .price-btn {
