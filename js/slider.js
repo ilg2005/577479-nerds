@@ -1,10 +1,11 @@
 'use strict';
 
-var isSliderClicked = false;
+var isMouseInSlider = false;
 var sliderListElement = $('.slider-list');
 
-sliderListElement.click(function () {
-  isSliderClicked = true;
+sliderListElement.mouseenter(function () {
+  isMouseInSlider = true;
+  console.log(isMouseInSlider);
 });
 
 var slideIDs = $('input[type="radio"]').map(function () {
