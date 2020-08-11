@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Нёрдс: главная страница</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
@@ -36,12 +38,14 @@
           <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
           <input class="visually-hidden" type="radio" id="product-2" name="toggle">
           <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+<!--
           <div class="slider-controls">
-            <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-            <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-            <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+            <label class="slider-controls-item slider-controls-item&#45;&#45;1" for="product-1">Первый</label>
+            <label class="slider-controls-item slider-controls-item&#45;&#45;2" for="product-2">Второй</label>
+            <label class="slider-controls-item slider-controls-item&#45;&#45;3" for="product-3">Третий</label>
           </div>
-          <ul class="slider-list">
+-->
+          <ul class="slider-list owl-carousel owl-theme">
             <li class="slider-item">
               <p class="slider-item-title">Долго, дорого,<br>скрупулезно.</p>
               <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
@@ -193,6 +197,7 @@
       </form>
     </div>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/popup.min.js"></script>
   </body>
